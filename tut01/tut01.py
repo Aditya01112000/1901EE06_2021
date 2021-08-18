@@ -1,7 +1,7 @@
 # defining function to check whether the given number present in the list pass to the function is meraki number or not 
 def MERAKI(n):
         f=0
-            # finding the absolute difference between the number and its adjacent
+            # finding the absolute difference between number and its adjacent
         for j in range(len(str(n))-1):
             n=str(n)
                 
