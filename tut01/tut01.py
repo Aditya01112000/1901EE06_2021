@@ -19,8 +19,7 @@ def MERAKI(n):
             print("No,", n, "is not a Meraki number.")
             return False
 
-input = [int(item) for item in input("Enter the input : ").split()] 
-# input = [12, 14, 56, 78, 98, 54, 678, 134, 789, 0, 7, 5, 123, 45, 76345, 987654321]
+input = [12, 14, 56, 78, 98, 54, 678, 134, 789, 0, 7, 5, 123, 45, 76345, 987654321]
 
 cnt_yes = 0
 cnt_no = 0 
