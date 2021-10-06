@@ -62,8 +62,7 @@ def generate_marksheet():
                 sheet = wb.active
                 sheet.append(["Roll No.",roll_no])
                 sheet.append(["Name of Student",d[roll_no]])  
-                sheet.append(["Discipline",roll_no[4:6]]) 
-                # sheet.append(["Semester No.",1,2,3,4,5,6,7,8])  
+                sheet.append(["Discipline",roll_no[4:6]])  
                 sheet.title="Overall"
                 wb.save(check)
             
@@ -113,11 +112,6 @@ def spi():
                 total_temp=total_temp+total_credit
                 total_cre.append(total_temp)
                 cpi.append(round(cpi_temp/total_temp,2))
-            # print(semester_no)
-            # print(semester_wise)
-            # print(spi)
-            # print(total_cre)
-            # print(cpi)
             overall.append(semester_no)
             overall.append(semester_wise)
             overall.append(spi)
@@ -125,14 +119,8 @@ def spi():
             overall.append(cpi)
             wb.save(check)
 
-               
-                  
-
-
-
-    
 
 mapping()
 subject()
-# generate_marksheet()
+generate_marksheet()
 spi()
